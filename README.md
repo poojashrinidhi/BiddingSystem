@@ -1,6 +1,13 @@
 The task
 ========
 
+Instructions To Run
+-------------------
+Update application.properties with the biddersUrl.
+mvn clean install
+java -jar target/BidderProject-0.0.1-SNAPSHOT.jar
+Run Test with bidder servers.
+
 Build a bidding system behaving as following:
 
 For every incoming request as described in [1], send out bid requests as described in [2] to a configurable number of bidders[5]. Responses from these bidders as described in [3] must be processed. The highest bidder wins, and payload is sent out as described in [4].
