@@ -65,9 +65,7 @@ Test Setup
 To start the test environment, use the script `test-setup.sh` on Linux or run the following docker commands one after the other:
 
 ```sh
-docker run --rm -e server.port=8081 -e biddingTrigger=a -e initial=150 -p 8081:8081 yieldlab/recruiting-test-bidder&
-docker run --rm -e server.port=8082 -e biddingTrigger=b -e initial=250 -p 8082:8082 yieldlab/recruiting-test-bidder&
-docker run --rm -e server.port=8083 -e biddingTrigger=c -e initial=500 -p 8083:8083 yieldlab/recruiting-test-bidder&
+Docker commands
 ```
 
 This will set up three bidders on localhost, opening ports 8081, 8082 and 8083.
@@ -78,8 +76,3 @@ Running the test
 To run the test, execute `run-test.sh` as a shell script. The script expects your application to run on port 8080. 
 
 You need `curl` and `diff` installed for this script to work. 
-
-Task Submission
-===============
-
-When your application passes the test, please send the code and instructions on how to build and run it back to Yieldlab. 
